@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Projet : Système de télégestion de forages</title>
+    <style>
+        body { font-family: Arial, sans-serif; max-width: 800px; margin: auto; padding: 20px; }
+        .feature-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 15px; margin: 20px 0; }
+        .feature { padding: 15px; border-left: 4px solid #3498db; background: #f8f9fa; }
+        .diagram { text-align: center; margin: 30px 0; padding: 20px; background: #f4f4f4; border-radius: 8px; }
+    </style>
+</head>
+<body>
+    <a href="../site/index.html" class="back-link">← Retour à l'accueil</a>
+    
+    <h1> Système de télégestion de forages avec Arduino</h1>
+    <p><strong>Contexte :</strong> Projet de Licence Professionnelle - Stage à l'ONEA</p>
+
+    <h2>Problématique</h2>
+    <p>Les forages d'eau isolés nécessitent des déplacements fréquents pour vérification. Solution : système de surveillance et contrôle à distance réduisant les déplacements de maintenance.</p>
+
+    <h2>Solution technique</h2>
+    <div class="feature-grid">
+        <div class="feature">
+            <strong> 3 Modes de fonctionnement</strong>
+            <p>Automatique, Manuel, Contrôle à distance</p>
+        </div>
+        <div class="feature">
+            <strong> Commande par SMS</strong>
+            <p>Module GSM SIM800L pour contrôle</p>
+        </div>
+        <div class="feature">
+            <strong> Capteurs multiples</strong>
+            <p>Pression, niveau d'eau, qualité tension</p>
+        </div>
+        <div class="feature">
+            <strong> Alertes automatiques</strong>
+            <p>SMS en cas de panne ou anomalie</p>
+        </div>
+    </div>
+
+    <div class="diagram">
+        <h3>Architecture du système</h3>
+        <pre>
+    [Capteurs] → [Arduino UNO] → [Module GSM]
+        ↓              ↓              ↓
+    [Données]   [Traitement]   [Communication]
+        ↓              ↓              ↓
+    [Base données] ← [Stockage] ← [Alertes SMS]
+        </pre>
+    </div>
+
+    <h2>Composants principaux</h2>
+    <ul>
+        <li>Arduino UNO (microcontrôleur)</li>
+        <li>Module GSM SIM800L (communication)</li>
+        <li>Capteur de pression WIKA</li>
+        <li>Relais de niveau RM3-LG2</li>
+        <li>Relais de puissance (contacteurs)</li>
+        <li>Alimentation 12V avec régulation</li>
+    </ul>
+
+    <h2>Fonctionnalités implémentées</h2>
+    <ol>
+        <li><strong>Mode Automatique</strong> : Démarrage/arrêt basé sur pression et niveau</li>
+        <li><strong>Mode Contrôlé</strong> : Commande par SMS (START/STOP/STATUS)</li>
+        <li><strong>Mode Manuel</strong> : Commande locale avec boutons</li>
+        <li><strong>Sécurité</strong> : Authentification par numéro téléphone</li>
+        <li><strong>Journalisation</strong> : Stockage des événements</li>
+    </ol>
+
+    <h2>Réalisations concrètes</h2>
+    <ul>
+        <li>Prototype fonctionnel validé en environnement de test</li>
+        <li>Cahier des charges complet avec ONEA</li>
+        <li>Documentation technique détaillée</li>
+        <li>Estimation des coûts de production</li>
+    </ul>
+
+    <h2>Compétences mobilisées</h2>
+    <ul>
+        <li>Programmation C/C++ pour Arduino</li>
+        <li>Conception électronique (schémas, PCB)</li>
+        <li>Communication série et GSM (AT Commands)</li>
+        <li>Gestion de projet en milieu professionnel</li>
+        <li>Rédaction de documentation technique</li>
+    </ul>
+</body>
+</html>

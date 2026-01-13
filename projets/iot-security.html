@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Projet : Détection d'attaques IoT avec ResNet</title>
+    <style>
+        body { font-family: Arial, sans-serif; max-width: 800px; margin: auto; padding: 20px; }
+        .back-link { display: inline-block; margin-bottom: 20px; }
+        .project-header { background: #f8f9fa; padding: 20px; border-radius: 8px; margin-bottom: 30px; }
+        .tech-badge { background: #e3f2fd; color: #1976d2; padding: 5px 10px; border-radius: 15px; display: inline-block; margin: 5px; }
+        .results-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 15px; margin: 20px 0; }
+        .result-card { text-align: center; padding: 15px; border: 1px solid #ddd; border-radius: 8px; }
+    </style>
+</head>
+<body>
+    <a href="../site/index.html" class="back-link">← Retour à l'accueil</a>
+    
+    <div class="project-header">
+        <h1> Détection d'attaques DoS/DDoS dans l'IoT avec ResNet</h1>
+        <p><strong>Contexte :</strong> Projet de Master 2 - Recherche en cybersécurité IoT</p>
+    </div>
+
+    <h2>Objectif du projet</h2>
+    <p>Concevoir un modèle de détection d'intrusions adapté aux contraintes strictes des dispositifs IoT (mémoire limitée, faible puissance de calcul) tout en maintenant une haute précision.</p>
+
+    <h2>Technologies utilisées</h2>
+    <div>
+        <span class="tech-badge">Python 3.9</span>
+        <span class="tech-badge">TensorFlow 2.12</span>
+        <span class="tech-badge">Keras</span>
+        <span class="tech-badge">ResNet Architecture</span>
+        <span class="tech-badge">Google Colab</span>
+        <span class="tech-badge">NF-UQ-NIDS-v2 Dataset</span>
+    </div>
+
+    <h2>Résultats obtenus</h2>
+    <div class="results-grid">
+        <div class="result-card">
+            <strong>99.10%</strong>
+            <p>Précision de détection</p>
+        </div>
+        <div class="result-card">
+            <strong>0.4 Mo</strong>
+            <p>Taille du modèle</p>
+        </div>
+        <div class="result-card">
+            <strong>1 seconde</strong>
+            <p>Temps d'inférence</p>
+        </div>
+    </div>
+
+    <h2>Innovation principale</h2>
+    <p>Conception d'une architecture "Lightened ResNet" réduisant de 99% l'empreinte mémoire par rapport à ResNet-50 standard, tout en conservant une précision supérieure à 99%.</p>
+
+    <h2>Extrait du concept</h2>
+    <pre style="background: #f4f4f4; padding: 15px; border-radius: 5px;">
+# Architecture Lightened ResNet simplifiée
+def build_lightened_resnet():
+    # Réduction des couches de 50 à 7
+    # Remplacement des convolutions standard par des Depthwise Convolutions
+    # Optimisation pour mémoire limitée des dispositifs IoT
+    return model_optimise</pre>
+
+    <h2>Compétences démontrées</h2>
+    <ul>
+        <li>Deep Learning pour la cybersécurité</li>
+        <li>Optimisation de modèles pour contraintes matérielles</li>
+        <li>Traitement de données réseau IoT</li>
+        <li>Validation expérimentale rigoureuse</li>
+    </ul>
+
+    <h2>Perspectives</h2>
+    <p>Ce modèle pourrait être déployé sur des passerelles IoT Edge pour une détection en temps réel sans nécessiter d'envoi de données vers le cloud.</p>
+</body>
+</html>
